@@ -7,28 +7,6 @@ import 'package:web_socket_channel/io.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:http/http.dart';
 
-// void main() async {
-//   // Create a new webhook endpoint.
-//   // final webhookEndpoint = MyWebhookEndpoint();
-
-//   // // Create a new shelf server.
-//   // final server = shelf_io.serve(
-//   //     shelf.Cascade().add(webhookEndpoint.middleware).handler,
-//   //     'localhost',
-//   //     443);
-
-//   // // Start the server.
-//   // await server.ready;
-
-//   // print('Webhook server is running on localhost:443');
-
-//   // // Wait for the server to stop.
-//   // await server.serveForever();
-
-//   print(getData());
-//   print(await getData());
-// }
-
 Future<List<String>> getData() async {
   List<String> result = [];
   Uri uri = Uri.parse('https://api.binance.com/api/v3/exchangeInfo');
